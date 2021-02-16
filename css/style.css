@@ -6,9 +6,8 @@
 
 .main-grid {
   display: grid;
-  grid-template-rows: 151px auto 100px;
+  grid-template-rows: 151px 1fr 100px;
   place-items: center;
-
 }
 
 header {
@@ -22,13 +21,16 @@ header {
   height: 151px;
   z-index: 1000;
   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, .25);
-  justify-items: center;
   align-items: center;
 }
 
 header h1 {
-  justify-self: start;
   padding-left: 60px;
+}
+
+.right-links {
+  justify-self: end;
+  padding-right: 60px;
 }
 
 h1,
@@ -60,9 +62,8 @@ header a {
   column-gap: 30px;
 }
 
-.right-links {
-  justify-self: end;
-  padding-right: 60px;
+.main-links {
+  justify-self: center;
 }
 
 main {
